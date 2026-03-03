@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mini WebApp - ToDo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Mini WebApp ✅</h1>
+    <p class="hint">ToDo local (se guarda en tu navegador con LocalStorage).</p>
+
+    <form id="todoForm" class="row">
+      <input id="todoInput" type="text" placeholder="Añade una tarea..." autocomplete="off" />
+      <button type="submit">Añadir</button>
+    </form>
+
+    <div class="row row-between">
+      <button id="clearDone" class="secondary" type="button">Borrar completadas</button>
+      <span id="counter" class="counter">0 pendientes</span>
+    </div>
+
+    <ul id="todoList" class="list"></ul>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
